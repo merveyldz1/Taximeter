@@ -1,0 +1,13 @@
+package org.example;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the distance:" );
+        double km = scan.nextDouble();
+        double price = (km * 2.20) + 10;
+        price = (price < 20) ? 20 : price;
+       System.out.println("Taximeter: " + price);
+    }
+}
